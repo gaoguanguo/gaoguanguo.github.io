@@ -6,7 +6,7 @@ title: my blog
 <p>latest artitle</p>
 <ul>
     {% for post in site.posts %}
-        <li> {{ post.data | data_to_string }}
+        <li> {{ post.date | data_to_string }}
             <a href=" {{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
         </li>
     {% endfor %}
